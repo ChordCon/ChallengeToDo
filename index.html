@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      
+        <form id="loginForm" class="hidden">
+         
+          <h1>로그인이 필요합니다.</h1>
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="이름을 입력해주세요."
+          />
+          <button>로그인</button>
+        </form>
+      </div>
+      <div id="toDo-card" class="card">
+        <div class="logoBox">
+          <img src="/img/icon.png"/>
+        </div>
+        <div id="info">
+          <h4 id="clock"></h4>
+          <div id="weatherBox">
+            <div id="city"></div>
+            <div id="weather"></div>
+            <div id="temp"></div>
+          </div>
+        </div>
+
+        <div id="sayHelloUser">
+          <h1 id="greeting" class="hidden"></h1>
+          <h2>ToDo List</h2>
+        </div>
+        <div class="box">
+          <div class="content">
+            <form id="todo-form">
+              <input
+                type="text"
+                required
+                maxlength="15"
+                id="toDoInput"
+                placeholder="Add ToDo"
+              />
+            </form>
+            <ul id="toDoList"></ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="famous-saying">
+          <div id="quotes"></div>
+          <div id="author"></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="src/greeting.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
